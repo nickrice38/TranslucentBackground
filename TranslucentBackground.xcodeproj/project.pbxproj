@@ -11,6 +11,13 @@
 		C45EF48629DB505600E3C21C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EF48529DB505600E3C21C /* ContentView.swift */; };
 		C45EF48829DB505800E3C21C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45EF48729DB505800E3C21C /* Assets.xcassets */; };
 		C45EF48B29DB505800E3C21C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45EF48A29DB505800E3C21C /* Preview Assets.xcassets */; };
+		C45EF49329DB511100E3C21C /* CameraView in Frameworks */ = {isa = PBXBuildFile; productRef = C45EF49229DB511100E3C21C /* CameraView */; };
+		C45EF49529DB54F300E3C21C /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EF49429DB54F300E3C21C /* ListItem.swift */; };
+		C45EF49829DB80E300E3C21C /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C45EF49629DB80E300E3C21C /* Inter-Medium.ttf */; };
+		C45EF49929DB80E300E3C21C /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C45EF49729DB80E300E3C21C /* Inter-Regular.ttf */; };
+		C45EF49C29DB81A600E3C21C /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C45EF49B29DB81A600E3C21C /* Inter-Bold.ttf */; };
+		C45EF49F29DB842C00E3C21C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C45EF49E29DB842C00E3C21C /* SwiftUICharts */; };
+		C45EF4A129DB8A9000E3C21C /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EF4A029DB8A9000E3C21C /* Chart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		C45EF48529DB505600E3C21C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C45EF48729DB505800E3C21C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C45EF48A29DB505800E3C21C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C45EF49429DB54F300E3C21C /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		C45EF49629DB80E300E3C21C /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		C45EF49729DB80E300E3C21C /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		C45EF49A29DB810200E3C21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C45EF49B29DB81A600E3C21C /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		C45EF4A029DB8A9000E3C21C /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45EF49329DB511100E3C21C /* CameraView in Frameworks */,
+				C45EF49F29DB842C00E3C21C /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +66,15 @@
 		C45EF48229DB505600E3C21C /* TranslucentBackground */ = {
 			isa = PBXGroup;
 			children = (
+				C45EF49A29DB810200E3C21C /* Info.plist */,
 				C45EF48329DB505600E3C21C /* TranslucentBackgroundApp.swift */,
 				C45EF48529DB505600E3C21C /* ContentView.swift */,
+				C45EF49429DB54F300E3C21C /* ListItem.swift */,
+				C45EF49629DB80E300E3C21C /* Inter-Medium.ttf */,
+				C45EF49729DB80E300E3C21C /* Inter-Regular.ttf */,
+				C45EF49B29DB81A600E3C21C /* Inter-Bold.ttf */,
 				C45EF48729DB505800E3C21C /* Assets.xcassets */,
+				C45EF4A029DB8A9000E3C21C /* Chart.swift */,
 				C45EF48929DB505800E3C21C /* Preview Content */,
 			);
 			path = TranslucentBackground;
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = TranslucentBackground;
+			packageProductDependencies = (
+				C45EF49229DB511100E3C21C /* CameraView */,
+				C45EF49E29DB842C00E3C21C /* SwiftUICharts */,
+			);
 			productName = TranslucentBackground;
 			productReference = C45EF48029DB505600E3C21C /* TranslucentBackground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,10 @@
 				Base,
 			);
 			mainGroup = C45EF47729DB505600E3C21C;
+			packageReferences = (
+				C45EF49129DB511100E3C21C /* XCRemoteSwiftPackageReference "CameraView" */,
+				C45EF49D29DB842C00E3C21C /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = C45EF48129DB505600E3C21C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45EF48B29DB505800E3C21C /* Preview Assets.xcassets in Resources */,
+				C45EF49C29DB81A600E3C21C /* Inter-Bold.ttf in Resources */,
 				C45EF48829DB505800E3C21C /* Assets.xcassets in Resources */,
+				C45EF49929DB80E300E3C21C /* Inter-Regular.ttf in Resources */,
+				C45EF49829DB80E300E3C21C /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45EF4A129DB8A9000E3C21C /* Chart.swift in Sources */,
+				C45EF49529DB54F300E3C21C /* ListItem.swift in Sources */,
 				C45EF48629DB505600E3C21C /* ContentView.swift in Sources */,
 				C45EF48429DB505600E3C21C /* TranslucentBackgroundApp.swift in Sources */,
 			);
@@ -270,11 +304,14 @@
 				DEVELOPMENT_TEAM = J4JD84FNLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TranslucentBackground/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Show Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +336,14 @@
 				DEVELOPMENT_TEAM = J4JD84FNLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TranslucentBackground/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Show Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +379,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C45EF49129DB511100E3C21C /* XCRemoteSwiftPackageReference "CameraView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brettfazio/CameraView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		C45EF49D29DB842C00E3C21C /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C45EF49229DB511100E3C21C /* CameraView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C45EF49129DB511100E3C21C /* XCRemoteSwiftPackageReference "CameraView" */;
+			productName = CameraView;
+		};
+		C45EF49E29DB842C00E3C21C /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C45EF49D29DB842C00E3C21C /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C45EF47829DB505600E3C21C /* Project object */;
 }
