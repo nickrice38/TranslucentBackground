@@ -18,6 +18,7 @@
 		C45EF49C29DB81A600E3C21C /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C45EF49B29DB81A600E3C21C /* Inter-Bold.ttf */; };
 		C45EF49F29DB842C00E3C21C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = C45EF49E29DB842C00E3C21C /* SwiftUICharts */; };
 		C45EF4A129DB8A9000E3C21C /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EF4A029DB8A9000E3C21C /* Chart.swift */; };
+		C495B56129DC953C0001C593 /* BalanceCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C495B56029DC953C0001C593 /* BalanceCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C45EF49A29DB810200E3C21C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C45EF49B29DB81A600E3C21C /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		C45EF4A029DB8A9000E3C21C /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
+		C495B56029DC953C0001C593 /* BalanceCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				C45EF49A29DB810200E3C21C /* Info.plist */,
 				C45EF48329DB505600E3C21C /* TranslucentBackgroundApp.swift */,
 				C45EF48529DB505600E3C21C /* ContentView.swift */,
+				C495B56029DC953C0001C593 /* BalanceCard.swift */,
 				C45EF49429DB54F300E3C21C /* ListItem.swift */,
 				C45EF49629DB80E300E3C21C /* Inter-Medium.ttf */,
 				C45EF49729DB80E300E3C21C /* Inter-Regular.ttf */,
@@ -172,6 +175,7 @@
 				C45EF4A129DB8A9000E3C21C /* Chart.swift in Sources */,
 				C45EF49529DB54F300E3C21C /* ListItem.swift in Sources */,
 				C45EF48629DB505600E3C21C /* ContentView.swift in Sources */,
+				C495B56129DC953C0001C593 /* BalanceCard.swift in Sources */,
 				C45EF48429DB505600E3C21C /* TranslucentBackgroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
