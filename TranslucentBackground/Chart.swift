@@ -37,6 +37,7 @@ struct Monday: View {
             
             Text("M")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -50,6 +51,7 @@ struct Tuesday: View {
             
             Text("T")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -63,6 +65,7 @@ struct Wednesday: View {
             
             Text("W")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -76,6 +79,7 @@ struct Thursday: View {
             
             Text("T")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -89,6 +93,7 @@ struct Friday: View {
             
             Text("F")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -102,6 +107,7 @@ struct Saturday: View {
             
             Text("S")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }
@@ -115,6 +121,7 @@ struct Sunday: View {
             
             Text("S")
                 .font(.custom("Inter-Medium", size: 15))
+                .foregroundColor(.primary)
         }
     }
 }

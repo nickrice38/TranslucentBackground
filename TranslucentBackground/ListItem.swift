@@ -36,6 +36,7 @@ struct ListItem: View {
             Text(amount)
 //                .font(.system(size: 20, weight: .bold, design: .rounded))
                 .font(.custom("Inter-Bold", size: 17))
+                .foregroundColor(.primary)
         }
         .padding(16)
         .frame(maxWidth: .infinity)

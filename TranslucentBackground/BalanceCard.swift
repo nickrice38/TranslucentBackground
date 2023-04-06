@@ -17,6 +17,7 @@ struct BalanceCard: View {
                 
                 Text("£1238.42")
                     .font(.custom("Inter-Bold", size: 32))
+                    .foregroundColor(.primary)
             }
             
             Spacer()
@@ -28,7 +29,7 @@ struct BalanceCard: View {
         .padding(.horizontal, 16)
         .frame(maxWidth: .infinity)
         .frame(height: 98)
-        .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.4)], startPoint: .bottom, endPoint: .top))
+        .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.35)], startPoint: .bottom, endPoint: .top))
         .overlay(
                 RoundedRectangle(cornerRadius: 16)
                     .stroke(LinearGradient(colors: [Color.white.opacity(0.3), Color.white.opacity(0.025)], startPoint: .bottom, endPoint: .top), lineWidth: 4)

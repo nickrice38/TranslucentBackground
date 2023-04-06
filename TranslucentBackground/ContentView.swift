@@ -17,14 +17,15 @@ struct ContentView: View {
             
             LinearGradient(colors: [Color("g1"), Color("g2"), Color("g3"), Color("g4"), Color("g5")], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
+                .opacity(0.65)
                 .blendMode(.saturation)
-                .opacity(0.4)
             
             
             VStack {
                 HStack(alignment: .center) {
                     Text("Overview")
                         .font(.custom("Inter-Bold", size: 28))
+                        .foregroundColor(.primary)
                         .padding(.top, 12)
                     
                     Spacer()
@@ -33,8 +34,14 @@ struct ContentView: View {
                         .font(.system(size: 24, weight: .medium))
                         .foregroundColor(.primary.opacity(0.6))
                         .frame(width: 40, height: 40)
-                        .background(.white.opacity(0.5))
+                        .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.35)], startPoint: .bottom, endPoint: .top))
+                        .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .stroke(LinearGradient(colors: [Color.white.opacity(0.3), Color.white.opacity(0.025)], startPoint: .bottom, endPoint: .top), lineWidth: 4)
+                            )
                         .clipShape(Circle())
+                        .shadow(color: .black.opacity(0.1), radius: 80, x: 0, y: 100)
+                        .shadow(color: .black.opacity(0.14), radius: 10, x: 0, y: 12.5)
                 }
                 .padding(.horizontal, 16)
                 
@@ -49,6 +56,7 @@ struct ContentView: View {
                             HStack{
                                 Text("Insights")
                                     .font(.custom("Inter-Medium", size: 15))
+                                    .foregroundColor(.primary)
                                 
                                 Spacer()
                                 
@@ -62,7 +70,7 @@ struct ContentView: View {
                             
                             Chart()
                                 .frame(height: 224)
-                                .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.4)], startPoint: .bottom, endPoint: .top))
+                                .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.35)], startPoint: .bottom, endPoint: .top))
                                 .overlay(
                                         RoundedRectangle(cornerRadius: 16)
                                             .stroke(LinearGradient(colors: [Color.white.opacity(0.3), Color.white.opacity(0.025)], startPoint: .bottom, endPoint: .top), lineWidth: 4)
@@ -78,6 +86,7 @@ struct ContentView: View {
                             HStack {
                                 Text("Transactions")
                                     .font(.custom("Inter-Medium", size: 15))
+                                    .foregroundColor(.primary)
                                 
                                 Spacer()
                                 
@@ -99,7 +108,7 @@ struct ContentView: View {
                                 
                                 ListItem(image: "4", name: "Starbucks", timestamp: "01 Apr at 10:32", amount: "£4.00")
                             }
-                            .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.4)], startPoint: .bottom, endPoint: .top))
+                            .background(LinearGradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0.35)], startPoint: .bottom, endPoint: .top))
                             .overlay(
                                     RoundedRectangle(cornerRadius: 16)
                                         .stroke(LinearGradient(colors: [Color.white.opacity(0.3), Color.white.opacity(0.025)], startPoint: .bottom, endPoint: .top), lineWidth: 4)
